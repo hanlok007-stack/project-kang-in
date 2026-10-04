@@ -11,7 +11,10 @@
     "build": "vite build --config portable.vite.config.ts && node scripts/prepare-pwa.mjs portable-dist",
     "build:pages": "vite build --config portable.vite.config.ts --outDir ../docs && node scripts/prepare-pwa.mjs docs",
     "typecheck": "tsc --noEmit",
-    "test": "node scripts/test-engine.mjs && node --test tests/pwa.test.mjs"
+    "test": "node scripts/test-engine.mjs && node --test tests/pwa.test.mjs",
+    "predev": "node scripts/prepare-assets.mjs",
+    "prebuild": "node scripts/prepare-assets.mjs",
+    "prebuild:pages": "node scripts/prepare-assets.mjs"
   },
   "dependencies": {
     "react": "19.2.6",

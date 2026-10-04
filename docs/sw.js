@@ -1,6 +1,6 @@
 /* The build script injects the release cache and its exact asset list. */
-const VERSION = "kang-in-v4-0784afa9bc55";
-const PRECACHE = ["./","./assets/index-C4ZU1kYv.js","./assets/style-p-uBcQ9Y.css","./favicon.svg","./icon-192.png","./icon-512.png","./icon-maskable.png","./manifest.webmanifest","./retro-kid.png"];
+const VERSION = "kang-in-v4-797833171a28";
+const PRECACHE = ["./","./assets/index-D-RKe04B.js","./assets/style-RdbXRzGK.css","./favicon.svg","./icon-192.png","./icon-512.png","./icon-maskable.png","./manifest.webmanifest","./retro-kid.png"];
 const scopeUrl = new URL('./', self.registration.scope);
 const absolute = path => new URL(path, scopeUrl).href;
 const allowed = new Set(PRECACHE.map(absolute));

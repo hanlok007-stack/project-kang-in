@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "이강인 키우기",
+  "short_name": "강인이 키우기",
+  "description": "48개월의 선택으로 키우는 작은 왼발. 복고풍 축구 육성게임.",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#c0c0c0",
+  "theme_color": "#000080",
+  "icons": [
+    {"src":"./icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"./icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
+    {"src":"./icon-maskable.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+  ]
+}

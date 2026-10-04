@@ -1,0 +1,326 @@
+[
+  {
+    "id": "e51",
+    "chapter": 4,
+    "title": "벤치의 담요, 낯선 구장의 잔디",
+    "body": "2021년 1월, 스무 살의 겨울. 소속팀의 1군 훈련 명단에 네 이름이 찍혔다. 하지만 아직은 유니폼보다 벤치 담요를 더 자주 입는다. 출전 기회를 약속하는 작은 팀에서 임대 제안이 왔다. 낯선 구장으로 가는 버스표가 손안에서 바스락거린다.",
+    "category": "career",
+    "choices": [
+      {
+        "label": "1군 벤치에서 기회를 기다린다",
+        "description": "높은 수준의 훈련으로 시야를 넓히지만, 긴 대기 시간에 마음이 처진다.",
+        "effects": { "vision": 1.5, "trust": 5, "happiness": -6 },
+        "flags": ["pro_stayed_first_team"]
+      },
+      {
+        "label": "임대로 내려가 매주 뛴다",
+        "description": "실전에서 볼 감각을 쌓는 대신, 원소속팀 코치와의 거리가 멀어진다.",
+        "effects": { "control": 1.5, "happiness": 6, "trust": -5 },
+        "flags": ["pro_loan_regular"]
+      },
+      {
+        "label": "한 달만 더 평가해 달라고 말한다",
+        "description": "짧은 승부에 걸어 코치의 관심을 얻지만, 추가 훈련의 피로를 감수한다.",
+        "effects": { "mentality": 1, "trust": 3, "fatigue": 7 },
+        "flags": ["pro_requested_trial_month"]
+      }
+    ]
+  },
+  {
+    "id": "e52",
+    "chapter": 4,
+    "title": "처음 받아 보는 마이크",
+    "body": "2021년 4월, 봄. 짧은 교체 출전 뒤 지역 신문 기자가 녹음기를 내민다. 휴대폰 카메라는 생각보다 가깝고, 엄마는 벌써 기사 링크를 기다린다. 기자가 묻는다. '주전 자리, 자신 있습니까?'",
+    "category": "media",
+    "choices": [
+      {
+        "label": "주전이 되겠다고 당당히 답한다",
+        "description": "팬들에게 이름을 알리지만, 큰 말 뒤에 따라올 시선이 부담으로 남는다.",
+        "effects": { "popularity": 8, "mentality": -1, "happiness": 2 },
+        "flags": ["pro_public_promise"]
+      },
+      {
+        "label": "선배들에게 배우는 중이라고 답한다",
+        "description": "동료들의 신뢰를 얻지만, 조용한 답변은 기사 아래쪽에 묻힌다.",
+        "effects": { "trust": 5, "teamwork": 4, "popularity": -3 },
+        "flags": ["pro_humble_interview"]
+      },
+      {
+        "label": "긴장을 웃음으로 풀어 버린다",
+        "description": "재치 있는 한마디로 호감을 얻는 대신, 진지하지 않다는 코치의 눈빛을 받는다.",
+        "effects": { "happiness": 5, "popularity": 4, "trust": -4 },
+        "flags": ["pro_joking_interview"]
+      }
+    ]
+  },
+  {
+    "id": "e53",
+    "chapter": 4,
+    "title": "도시락 반찬과 한 번의 패스",
+    "body": "2021년 7월, 여름. 식당에 혼자 앉아 있던 선배가 네 옆에 반찬통을 놓는다. '내일 연습경기 때, 내가 뛰면 한 번만 믿고 줘.' 지난번 그 선배의 실수로 팀이 졌던 장면이 머릿속에 다시 뜬다.",
+    "category": "team",
+    "choices": [
+      {
+        "label": "선배의 움직임에 패스를 건다",
+        "description": "호흡과 신뢰를 쌓지만, 공을 잃으면 네 평가도 함께 흔들릴 수 있다.",
+        "effects": { "passing": 1.5, "teamwork": 6, "condition": -3 },
+        "flags": ["pro_trusted_teammate"]
+      },
+      {
+        "label": "내가 직접 돌파해 결과를 만든다",
+        "description": "개인 돌파를 갈고닦는 대신, 기다리던 선배와의 호흡이 어색해진다.",
+        "effects": { "dribbling": 1.5, "popularity": 3, "teamwork": -6 },
+        "flags": ["pro_chose_solo_play"]
+      },
+      {
+        "label": "둘이 남아 패스 타이밍을 맞춘다",
+        "description": "실수의 원인을 함께 풀어 신뢰를 얻지만, 쉬어야 할 저녁을 훈련에 쓴다.",
+        "effects": { "passing": 1, "trust": 5, "fatigue": 6 },
+        "flags": ["pro_extra_teammate_drill"]
+      }
+    ]
+  },
+  {
+    "id": "e54",
+    "chapter": 4,
+    "title": "골대 옆으로 간 공",
+    "body": "2021년 10월, 가을. 종료 직전, 비어 있는 골대 옆으로 슛이 흘러갔다. 관중석의 탄식이 귀에서 빠지지 않는다. 방 천장은 그대로인데, 인터넷 게시판에는 네 이름이 밤새 올라온다.",
+    "category": "pressure",
+    "choices": [
+      {
+        "label": "다음 날 같은 위치에서 슛을 반복한다",
+        "description": "마무리 감각을 보완하지만, 조급한 추가 훈련이 몸의 회복을 늦춘다.",
+        "effects": { "shooting": 1.5, "fatigue": 8, "condition": -3 },
+        "flags": ["pro_miss_extra_training"]
+      },
+      {
+        "label": "게시판을 닫고 가족에게 전화한다",
+        "description": "마음을 추슬러 다음 경기를 준비하는 대신, 당장의 기술 보완은 미뤄 둔다.",
+        "effects": { "mentality": 1.5, "happiness": 6, "shooting": -0.5 },
+        "flags": ["pro_miss_family_support"]
+      },
+      {
+        "label": "코치에게 장면을 함께 보자고 한다",
+        "description": "판단을 배우고 신뢰를 얻지만, 실수 장면을 다시 보며 기분이 가라앉는다.",
+        "effects": { "vision": 1.5, "trust": 4, "happiness": -5 },
+        "flags": ["pro_miss_video_review"]
+      }
+    ]
+  },
+  {
+    "id": "e55",
+    "chapter": 4,
+    "title": "테이핑 끝에 걸린 출전 명단",
+    "body": "2022년 1월, 스물한 살의 겨울. 다리는 묵직한데 네 출전 평가가 걸린 중요한 경기가 사흘 뒤다. 치료실 라디오에서는 오래된 응원가가 작게 나온다. 트레이너는 휴식을 권하고, 감독은 네 상태를 묻는다.",
+    "category": "recovery",
+    "choices": [
+      {
+        "label": "이번 경기를 쉬고 회복한다",
+        "description": "몸 상태를 되돌리지만, 중요한 경기에서 자리를 비운 만큼 코치의 신뢰가 줄어든다.",
+        "effects": { "condition": 10, "fatigue": -9, "trust": -5 },
+        "flags": ["pro_rest_before_big_match"]
+      },
+      {
+        "label": "선발로 뛰겠다고 자원한다",
+        "description": "팀을 위해 나서는 태도로 신뢰를 얻지만, 누적 피로와 몸 상태를 더 감수한다.",
+        "effects": { "trust": 7, "mentality": 1, "fatigue": 10, "condition": -7 },
+        "flags": ["pro_played_through_fatigue"]
+      },
+      {
+        "label": "후반 20분만 뛰는 역할을 제안한다",
+        "description": "짧은 시간에 팀을 돕고 호흡을 지키는 대신, 충분한 휴식은 얻지 못한다.",
+        "effects": { "teamwork": 5, "trust": 3, "fatigue": 4, "condition": -2 },
+        "flags": ["pro_limited_minutes"]
+      }
+    ]
+  },
+  {
+    "id": "e56",
+    "chapter": 4,
+    "title": "반짝이는 명함 한 장",
+    "body": "2022년 4월, 봄. 경기장 앞 작은 식당에서 에이전트가 금색 글씨의 명함을 건넨다. 광고 촬영과 더 큰 무대 이야기가 싸구려 종이컵의 김 사이로 쏟아진다. 계약서의 작은 글씨는 테이블 위 빵 부스러기보다 촘촘하다.",
+    "category": "career",
+    "choices": [
+      {
+        "label": "광고 기회를 포함한 제안을 받는다",
+        "description": "인지도를 빠르게 높이지만, 촬영 일정이 훈련과 휴식 시간을 잠식한다.",
+        "effects": { "popularity": 10, "happiness": 3, "fatigue": 7, "trust": -3 },
+        "flags": ["pro_agent_commercial_deal"]
+      },
+      {
+        "label": "축구 일정 중심의 조건을 협상한다",
+        "description": "팀과의 약속을 지키며 정신력을 기르지만, 화려한 홍보 기회는 줄어든다.",
+        "effects": { "trust": 5, "mentality": 1, "popularity": -4 },
+        "flags": ["pro_agent_football_first"]
+      },
+      {
+        "label": "당분간은 혼자 준비하기로 한다",
+        "description": "생활의 여유를 지키지만, 도움 없이 다음 기회를 찾는 부담이 생긴다.",
+        "effects": { "condition": 5, "fatigue": -4, "happiness": -4, "popularity": -2 },
+        "flags": ["pro_agent_declined"]
+      }
+    ]
+  },
+  {
+    "id": "e57",
+    "chapter": 4,
+    "title": "사전보다 빠른 라커룸 농담",
+    "body": "2022년 7월, 여름. 모국어가 다른 새 동료는 네 이름을 잘못 부르고, 너도 그가 쓰는 작전 용어를 반만 알아듣는다. 둘 다 웃었지만 훈련 중 한 번씩 엇갈린다. 방 책상 위에 서로 통하는 말을 익힐 회화책이 놓였다.",
+    "category": "culture",
+    "choices": [
+      {
+        "label": "매일 회화 공부를 붙잡는다",
+        "description": "말을 이해하는 속도를 높이지만, 늦은 공부 때문에 다음 날 몸이 무겁다.",
+        "effects": { "language": 9, "teamwork": 2, "fatigue": 5 },
+        "flags": ["pro_language_study"]
+      },
+      {
+        "label": "동료와 식사하며 생활 말을 배운다",
+        "description": "친밀감과 실용적인 말을 얻지만, 낯선 식사 자리의 긴장에 컨디션을 조금 쓴다.",
+        "effects": { "language": 5, "teamwork": 6, "condition": -3 },
+        "flags": ["pro_language_friendship"]
+      },
+      {
+        "label": "말 대신 움직임과 손짓을 맞춘다",
+        "description": "필드 위 호흡과 패스를 개선하지만, 라커룸 대화에서는 여전히 한발 늦는다.",
+        "effects": { "passing": 1.5, "teamwork": 4, "language": -3 },
+        "flags": ["pro_language_on_field_only"]
+      }
+    ]
+  },
+  {
+    "id": "e58",
+    "chapter": 4,
+    "title": "가게 유리창의 네 사진",
+    "body": "2022년 10월, 가을. 구장 앞 작은 가게 유리창에 네 사진이 붙었다. 아르바이트 학생이 음료를 건네며 '이번에도 골 부탁해요'라고 한다. 반가운 말인데, 어느새 팬들은 네가 공을 잡을 때마다 일어선다.",
+    "category": "fans",
+    "choices": [
+      {
+        "label": "팬들이 바라는 슛을 더 자주 노린다",
+        "description": "슈팅 경험과 관심을 얻지만, 무리한 시도가 동료의 좋은 기회를 줄인다.",
+        "effects": { "shooting": 1.5, "popularity": 5, "teamwork": -6 },
+        "flags": ["pro_fans_attack_promise"]
+      },
+      {
+        "label": "골보다 팀의 승리를 약속한다",
+        "description": "동료들과 연결하는 플레이를 배우지만, 화려한 개인 기록을 기다린 팬의 관심이 식는다.",
+        "effects": { "vision": 1.5, "teamwork": 5, "popularity": -4 },
+        "flags": ["pro_fans_team_promise"]
+      },
+      {
+        "label": "훈련 후 팬들과 짧게 인사한다",
+        "description": "응원을 직접 받아 기운과 인지도를 얻지만, 쉬는 시간이 줄어 피로가 남는다.",
+        "effects": { "happiness": 6, "popularity": 6, "fatigue": 4 },
+        "flags": ["pro_fans_personal_connection"]
+      }
+    ]
+  },
+  {
+    "id": "e59",
+    "chapter": 4,
+    "title": "라이벌의 새 축구화",
+    "body": "2023년 1월, 스물두 살의 겨울. 같은 포지션의 동갑 선수가 새 축구화를 신고 먼저 훈련장에 나왔다. 기자는 둘을 경쟁자로 묶고, 감독의 조끼 한 장은 그의 손에 갔다. 얼마 전 같이 컵라면 먹던 사이인데 오늘은 말이 짧다.",
+    "category": "rivalry",
+    "choices": [
+      {
+        "label": "개인 돌파로 차이를 보여 준다",
+        "description": "특기를 날카롭게 만들지만, 경쟁에 몰두해 동료와 공을 나누는 횟수가 줄어든다.",
+        "effects": { "dribbling": 1.5, "mentality": 0.5, "teamwork": -5 },
+        "flags": ["pro_rival_solo_competition"]
+      },
+      {
+        "label": "라이벌에게 함께 연습하자고 한다",
+        "description": "서로의 장점을 배우고 팀의 호흡을 지키지만, 추가 연습의 피로를 함께 떠안는다.",
+        "effects": { "control": 1, "teamwork": 6, "fatigue": 5 },
+        "flags": ["pro_rival_training_partner"]
+      },
+      {
+        "label": "감독에게 다른 역할을 요청한다",
+        "description": "새 위치의 시야와 코치의 신뢰를 얻지만, 익숙한 자리를 양보하는 마음은 쓰리다.",
+        "effects": { "vision": 1.5, "trust": 4, "happiness": -6 },
+        "flags": ["pro_rival_role_change"]
+      }
+    ]
+  },
+  {
+    "id": "e60",
+    "chapter": 4,
+    "title": "주장 완장은 아직 헐렁하다",
+    "body": "2023년 4월, 봄. 주장 선배가 훈련을 빠지는 동안 감독이 네게 준비 운동을 맡긴다. 어린 선수는 네 지시를 기다리고, 고참은 팔짱을 낀다. 중학교 운동장에서 친구를 불러 모으던 목소리가 문득 생각난다.",
+    "category": "leadership",
+    "choices": [
+      {
+        "label": "짧고 분명하게 훈련을 이끈다",
+        "description": "결정을 내리는 힘과 코치의 신뢰를 얻지만, 날카로운 말투가 동료의 기분을 상하게 한다.",
+        "effects": { "mentality": 1.5, "trust": 5, "teamwork": -4 },
+        "flags": ["pro_leadership_direct"]
+      },
+      {
+        "label": "동료의 의견을 듣고 순서를 정한다",
+        "description": "모두의 호흡을 얻지만, 늦어진 준비에 감독의 인내를 조금 잃는다.",
+        "effects": { "teamwork": 8, "happiness": 3, "trust": -3 },
+        "flags": ["pro_leadership_listening"]
+      },
+      {
+        "label": "고참에게 조언을 구해 함께 진행한다",
+        "description": "판단을 배우고 관계를 다지지만, 혼자 해낼 수 있다는 자신감은 덜 쌓인다.",
+        "effects": { "vision": 1, "teamwork": 5, "mentality": -0.5 },
+        "flags": ["pro_leadership_shared"]
+      }
+    ]
+  },
+  {
+    "id": "e61",
+    "chapter": 4,
+    "title": "큰 이름, 작은 출전표",
+    "body": "2023년 7월, 여름. 이름이 널리 알려진 큰 구단은 화려한 유니폼과 치열한 경쟁을, 지금 팀은 확실한 역할과 긴 계약을 제시한다. 계약서 옆에는 낡은 첫 등록증이 있다. 이제 무엇을 선택하느냐에 따라 다음 계약의 풍경이 바뀐다.",
+    "category": "contract",
+    "choices": [
+      {
+        "label": "지금 팀에서 중심 역할을 맡는다",
+        "description": "동료와 코치의 신뢰를 지키지만, 큰 구단이 주는 주목은 놓친다.",
+        "effects": { "trust": 8, "teamwork": 6, "popularity": -5 },
+        "flags": ["pro_contract_core_role"]
+      },
+      {
+        "label": "큰 구단에서 경쟁에 도전한다",
+        "description": "높은 수준의 훈련과 인지도를 얻지만, 불확실한 출전에 마음의 여유가 줄어든다.",
+        "effects": { "control": 1.5, "popularity": 9, "happiness": -7 },
+        "flags": ["pro_contract_famous_club"]
+      },
+      {
+        "label": "짧은 계약으로 다음 기회를 남긴다",
+        "description": "스스로 길을 고를 여유를 얻지만, 미래를 장담하지 않는 태도에 코치가 서운해한다.",
+        "effects": { "happiness": 5, "mentality": 1, "trust": -6 },
+        "flags": ["pro_contract_short_term"]
+      }
+    ]
+  },
+  {
+    "id": "e62",
+    "chapter": 4,
+    "title": "성장기의 끝, 아직 끝나지 않은 꿈",
+    "body": "2023년 10월, 가을. 첫 프로 3년의 성장 기록을 매듭지을 중요한 경기까지 사흘. 탈의실에는 누군가 붙인 '여기까지 수고했다' 종이가 삐뚤게 걸렸다. 스물두 살의 너는 첫 월급으로 산 축구화를 끈까지 닳도록 신었다. 다음 무대에 앞서 이 성장기를 어떻게 마무리할까.",
+    "category": "finale",
+    "choices": [
+      {
+        "label": "성장을 보여 줄 골을 위해 집중 훈련한다",
+        "description": "마무리 능력과 각오를 다지지만, 여러 달 뛰어 온 지친 몸에 부담을 더한다.",
+        "effects": { "shooting": 1.5, "mentality": 0.5, "fatigue": 8, "condition": -4 },
+        "flags": ["pro_finale_goal_chase"]
+      },
+      {
+        "label": "동료들과 호흡을 맞춰 승리를 노린다",
+        "description": "패스와 팀의 결속을 끌어올리는 대신, 개인의 빛나는 마무리를 바라는 관심은 줄어든다.",
+        "effects": { "passing": 1.5, "teamwork": 7, "popularity": -3 },
+        "flags": ["pro_finale_team_finish"]
+      },
+      {
+        "label": "잘 쉬고 응원해 준 사람들에게 인사한다",
+        "description": "회복과 마음의 여유를 얻지만, 더 준비할 시간을 줄였다는 코치의 평가를 감수한다.",
+        "effects": { "condition": 8, "fatigue": -8, "happiness": 7, "trust": -4 },
+        "flags": ["pro_finale_grateful_rest"]
+      }
+    ]
+  }
+]

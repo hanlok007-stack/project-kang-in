@@ -1,0 +1,5 @@
+node_modules/
+portable-dist/
+.test-output/
+*.tsbuildinfo
+.env*

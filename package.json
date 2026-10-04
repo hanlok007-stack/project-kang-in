@@ -1,0 +1,29 @@
+{
+  "name": "project-kang-in",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite --config portable.vite.config.ts",
+    "build": "vite build --config portable.vite.config.ts && node scripts/prepare-pwa.mjs portable-dist",
+    "build:pages": "vite build --config portable.vite.config.ts --outDir ../docs && node scripts/prepare-pwa.mjs docs",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/test-engine.mjs && node --test tests/pwa.test.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "typescript": "5.9.3",
+    "vite": "8.0.13"
+  }
+}

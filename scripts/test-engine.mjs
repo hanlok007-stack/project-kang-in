@@ -1,0 +1,10 @@
+import {spawnSync} from 'node:child_process';
+import {mkdirSync,writeFileSync,rmSync} from 'node:fs';
+import path from 'node:path';
+const dir='.test-output';mkdirSync(dir,{recursive:true});
+const compiled=spawnSync(process.execPath,['node_modules/typescript/bin/tsc','tests/engine.test.ts','--strict','--module','commonjs','--moduleResolution','node','--resolveJsonModule','--esModuleInterop','--target','ES2022','--outDir',dir,'--skipLibCheck'],{stdio:'inherit'});
+if(compiled.status!==0)process.exit(compiled.status||1);
+writeFileSync(path.join(dir,'package.json'),' {"type":"commonjs"}');
+const result=spawnSync(process.execPath,[path.join(dir,'tests/engine.test.js')],{stdio:'inherit'});
+if(result.status===0)rmSync(dir,{recursive:true,force:true});
+process.exit(result.status||0);

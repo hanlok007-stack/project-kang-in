@@ -1,6 +1,6 @@
-# 이강인 키우기 · Project KANG-IN v0.4
+# 이강인 키우기 · Project KANG-IN v0.5
 
-모바일에서 즐기는 8090 PC게임 감성의 축구 육성게임입니다.
+모바일에서 즐기는 축구 육성게임입니다. 밝은 클럽하우스 화면, 잉크색 선수 카드, 라임 포인트와 작은 도트 캐릭터를 담았습니다.
 
 [바로 플레이](https://hanlok007-stack.github.io/project-kang-in/)
 
